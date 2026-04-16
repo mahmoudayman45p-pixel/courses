@@ -2,81 +2,104 @@ body {
     margin: 0;
     font-family: Arial;
     background-image: url(rm373batch13-085.jpg);
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 
 header {
-    background: red;
+    background-color: red;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 14px;
+}
+.textarea{
+    width:"16px"
+
+
 }
 
-
 nav {
-    background: gray;
-    padding: 10px;
+    background-color: gray;
     text-align: center;
+    padding: 5px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
     margin: 5px;
+    text-decoration: none;
 }
 
 main {
-    padding: 10px;
+    padding: 20px;
+    background-color: grey;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    flex: 1;
 }
-
-
-section {
-    background: white;
-    padding: 10px;
-    margin: 10px;
-}
-
-
-footer {
-    background: blue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
 table, th, td {
-    border: 1px  black;
+    border: 1px SOLID BLACK;
 }
 
 th, td {
-    padding: 5px;
+    padding: 8px;
+    text-align: center;
 }
 
+.form-group {
+    margin: 15px 0;
+    text-align: center;
+}
 
-input, textarea {
-    width: 100%;
-    margin-top: 5px;
+input {
+    width: 80%;
+    padding: 10px;
 }
 
 button {
-    margin-top: 10px;
-    background: blue;
+    padding: 13px 20px;
+}
+
+footer {
+    
     color: white;
+    padding: 5px;
+    text-align: center;
+    
+    background-color: blue;
 }
 
 
-nav a:hover {
-    background: black;
-}
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
     nav a {
         display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
     }
 }
